@@ -1,0 +1,81 @@
+/* 1 div elementin icinde olan h1 leri secir ve style verir */
+div h1{
+    color: aqua;
+}
+
+/* 2 sec-2 classin daxilinde butun elemntleri secir ve style  */
+.sec-2 *{
+    color: cyan;
+} 
+
+/* 3 element+element sec-3 den gelen sonraki p elemntleri secir ve style edir */
+
+.sec-3 + p{
+    background-color: burlywood;
+}
+
+/* 4 ol daxilinde en birinci li secib style eledik */
+
+.sec-5 li:first-child{
+    color: coral;
+}
+/* 5 ol daxilinde en sonuncu li secib style eledik */
+.sec-4 li:last-child{
+    color: yellowgreen;
+}
+
+/* 6 .head-1 classi secir */
+.head-1{
+    color: violet;
+}
+
+/* 7 idsi parag olan elementi secir */
+#parag{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* 8 sec-6 class daxilinde p ve span secilir */
+.sec-6 p,span{
+    color: teal;
+}
+/* 9 pseuda class vasitesile ile 3 cu child secilir */
+.list li:nth-child(3){
+    background-color: tan;
+}
+
+/* 10 secilmis classdaki elementin birinci herfi secilir */
+
+.list .f::first-letter{
+    color: rgb(136, 255, 0);
+}
+
+/* 11 secilmis classdan sonra element elave etmek olur */
+.head-1::after{
+    content: "lorem";
+    font-size: 15px;
+    background-color: rgb(255, 0, 0);
+}
+
+/* 12 secilmis class dan evvel element elave etmek olur */
+
+.head-1::before{
+    content: "salam";
+    font-size: 15px;
+    color: royalblue;
+}
+
+/* 13 ul icinde yalniz bir nov li elementi secilir */
+.list li:nth-of-type(1) {
+    color: rgb(98, 0, 128);
+}
+
+/* 14 href atributu secilir ve her bir a da olan linkler secilir */
+a[href]
+{
+    color: brown;
+}
+
+/* 15 General sibling olaraq ondan sonra gelen li elemnleri secilir */
+
+.gs ~ li{
+    background-color: seagreen;
+}

@@ -1,0 +1,28 @@
+.yellow{
+    background-color: yellow;
+}
+
+.head-1{
+    color: red;
+    border: 5px solid rgb(112, 19, 112); 
+}
+
+.parag-1{ 
+    background-color: rgb(0, 191, 255); 
+}
+
+.parag-2{
+    background-color: darkgreen;
+}
+
+.parag-3{
+    color: rgb(247, 197, 205);
+}
+
+.parag-4{
+    background-color: darkgreen;
+}
+
+.google{ 
+    background-color: rgb(255, 251, 0); 
+}
