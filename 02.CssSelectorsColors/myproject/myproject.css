@@ -79,3 +79,36 @@ a[href]
 .gs ~ li{
     background-color: seagreen;
 }
+
+/* 16 daxil olmamis linkleri secir */
+.sec-7 a:link{
+    color: yellowgreen;
+}
+
+/* 17 daxil olmus linkleri secir */
+.sec-8 a:visited
+{
+    color: violet;
+}
+
+/* 18 ul daxilinde li en birinci daxilinde span secilir */
+.sec-9 li:first-child span{
+    color: chartreuse;
+}
+
+/* 19 ul daxilinde li axrincini secib daxilindeki span secilir */
+
+.sec-9 li:last-child span{
+    background-color: coral;
+}
+
+/* 20 sec-10 classin icindeki ol icindeki li sirasinda cutleri secilir */
+.sec-10 ol li:nth-of-type(even){
+    color: springgreen;
+}
+
+/* 21 sec-10 calssin icindeki ol icindeki li sirasinda tekleri secilir */
+.sec-10 ol li:nth-of-type(odd)
+{
+    color: slateblue;
+}
