@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epilogue";
+    font-weight: bold;
+}
+.head{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.head .left{
+    text-align: center;
+    background-color: rgba(228, 223, 223, 0.808);
+    width: 500px;
+    height: 600px;
+    margin-left: 150px;
+}
+.head .left h1{
+    padding-top: 40px;
+}
+
+.head .left p{
+    margin-bottom: 40px;
+    color: gray;
+}
+.head .left button{
+    height: 30px;
+    width: 170px;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+}
+.left i{
+    font-size: 25px;
+    margin-top:  22px;
+    padding: 6px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+.head .right{
+    width: 700px;
+    height: 600px;
+    text-align:left;
+   padding: 110px;
+}
+.head .right h1{
+padding-bottom: 5px;
+font-size: 3rem;
+}
+.head .right p{
+    color: grey;
+
+}
+
+.right button{
+    height: 30px;
+    width: 170px;
+    margin-top: 115px;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+
+}
+
+.prt{
+    margin-left: 30px;
+}
+
+.head button:hover{
+    height: 30px;
+    width: 170px;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
