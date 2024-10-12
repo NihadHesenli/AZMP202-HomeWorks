@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 99vw;
+    height: 200vh;
+}
+.box{
+    width: 600px;
+    height: 500px;
+    background-color: blanchedalmond;
+    border: 3px solid green;
+    margin: 100px auto;
+    position: relative;
+}
+
+.box .red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.box .brown{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 99, 71, 0.5);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+.box .yellow{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+}
+
+.box .orange{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: sticky;
+    left: 90%;
+    top: 0;
+}
+.box .green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: calc(50% - 50px);
+    right: calc(50% - 50px);
+}
+
+.teal{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    position: fixed;
+    top: 400px;
+    right: 0;
+}
