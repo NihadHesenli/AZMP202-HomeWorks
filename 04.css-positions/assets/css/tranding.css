@@ -36,3 +36,7 @@ img{
 .card h4{
     margin: 10px 0;
 }
+
+.card span{
+    color: grey;
+}
