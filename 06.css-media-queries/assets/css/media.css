@@ -1,0 +1,250 @@
+.container .header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .header .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 77vh;
+}
+
+#head{
+    background-image: url(../image/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header .nav h1{
+    color: orange;
+}
+
+.header .nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.header .nav ul li a{
+    color: white;
+    transition: all 0.5s;
+}
+
+.header .nav ul li a:hover{
+    color: orange;
+
+}
+
+.header .nav ul li .head-nav{
+    color: orange;
+}
+
+.header .head p{
+    font-size: 48px;
+    color: white;
+}
+
+.header .head h1{
+    font-size: 6rem;
+    color: white;
+}
+
+.head .head-button{
+    padding: 1.25rem 2.5rem;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.head .head-button:hover{
+    background-color: rgb(190, 124, 0);
+}
+
+.header .menu-icon {
+    position: relative;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu-icon .menu-btn{
+    padding: 8px 28px 8px 5px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header .menu-icon .menu-btn:hover{
+    background-color: rgb(190, 124, 0);
+}
+
+.header .menu-icon i{
+ position: absolute;
+ right: 7px;
+ padding-bottom: 2px;
+ color: white;
+}
+
+      /* MAIN PART */
+
+#services{
+    padding: 65px 0;
+}
+
+#footer{
+    margin-top: 65px;
+}
+
+#portfolio{
+    padding: 65px 0;
+    background-color: rgba(248, 247, 247, 0.76);
+}
+
+.container .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.services em:first-child, .portfolio em:first-child{
+    font-size: 1.25rem;
+    color: rgb(192, 188, 188);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.services h1, .portfolio h1{
+    font-size: 4rem;
+    margin-bottom: 5px;
+} 
+
+.services .row .col-4 i{
+    border: none ;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.services .row .col-4 h2{
+    margin-bottom: 10px;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+.portfolio .row .card-info{
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.portfolio .row h3{
+    font-size: 2rem;
+}
+
+   /* FOOTER PART */
+
+.container .footer .footer-up .col-3{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container .footer .footer-up img{
+    width: 70%;
+}
+ 
+.container .footer .footer-down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.fa-facebook-f, .fa-linkedin{
+    width: 60px;
+    text-align: center;
+}
+
+.container .footer .footer-down i{
+    font-size: 2rem;
+    padding: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.container .footer .footer-down i:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.container .footer .footer-down ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .footer .footer-down ul li a{
+    color: black;
+}
+
+@media only screen and (max-width:1023px){
+    .container .footer .footer-down{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header .menu-icon {
+        display: flex;
+    }
+    .header .nav ul{
+        display: none;
+    }
+    .container .header .head{
+        height: 55vh;
+    }
+    .container .footer .footer-down{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
