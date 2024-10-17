@@ -302,4 +302,8 @@
         flex-direction: column;
         gap: 30px;
     }
+    .team p:last-child{
+        width: 300px;
+    }
+    
 }
