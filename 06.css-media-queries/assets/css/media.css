@@ -281,7 +281,6 @@
     color: black;
 }
 
-
 @media only screen and (max-width:1023px){
     .container .footer .footer-down{
         flex-direction: column;
