@@ -241,7 +241,7 @@
         display: none;
     }
     .container .header .head{
-        height: 55vh;
+        height: 90vh;
     }
     .container .footer .footer-down{
         flex-direction: column;
