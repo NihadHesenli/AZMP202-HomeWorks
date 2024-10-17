@@ -113,11 +113,11 @@
     padding: 65px 0;
 }
 
-#footer{
+#footer {
     margin-top: 65px;
 }
 
-#portfolio{
+#portfolio, #team{
     padding: 65px 0;
     background-color: rgba(248, 247, 247, 0.76);
 }
@@ -129,16 +129,17 @@
     align-items: center; 
 }
 
-.services em:first-child, .portfolio em:first-child{
+.services em:first-child, .portfolio em:first-child, .team em:first-child{
     font-size: 1.25rem;
     color: rgb(192, 188, 188);
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.services h1, .portfolio h1{
-    font-size: 4rem;
+.services h1, .portfolio h1 , .team h1{
+    font-size: 3rem;
     margin-bottom: 5px;
+    text-transform: uppercase;
 } 
 
 .services .row .col-4 i{
@@ -176,6 +177,56 @@
     font-size: 2rem;
 }
 
+.team img{
+    width: 50%;
+    border: 3px solid rgba(128, 128, 128, 0.575);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team .row p{
+   color: rgb(192, 188, 188);
+   margin-top: 5px;
+}
+
+.team p:last-child{
+    color: rgb(192, 188, 188);
+    width: 700px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.container .team i{
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.team .team-icons .fa-facebook-f , .team .team-icons .fa-linkedin{
+    width: 37px;
+    text-align: center;
+}
+
+.team .team-icons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
    /* FOOTER PART */
 
 .container .footer .footer-up .col-3{ 
@@ -195,7 +246,7 @@
     padding: 40px;
 }
 
-.fa-facebook-f, .fa-linkedin{
+.footer .fa-facebook-f, .footer .fa-linkedin{
     width: 60px;
     text-align: center;
 }
@@ -226,6 +277,7 @@
     color: black;
 }
 
+
 @media only screen and (max-width:1023px){
     .container .footer .footer-down{
         flex-direction: column;
@@ -241,7 +293,7 @@
         display: none;
     }
     .container .header .head{
-        height: 55vh;
+        height: 85vh;
     }
     .container .footer .footer-down{
         flex-direction: column;
