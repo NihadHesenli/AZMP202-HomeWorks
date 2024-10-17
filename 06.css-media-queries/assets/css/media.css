@@ -215,6 +215,10 @@
     transition: 0,5s;
 }
 
+.container .team i:hover{
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
 .team .team-icons .fa-facebook-f , .team .team-icons .fa-linkedin{
     width: 37px;
     text-align: center;
@@ -224,7 +228,7 @@
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
    /* FOOTER PART */
