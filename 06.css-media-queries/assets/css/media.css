@@ -140,6 +140,7 @@
     font-size: 3rem;
     margin-bottom: 5px;
     text-transform: uppercase;
+    text-align: center;
 } 
 
 .services .row .col-4 i{
@@ -191,6 +192,7 @@
     flex-direction: column;
 }
 
+
 .team .row p{
    color: rgb(192, 188, 188);
    margin-top: 5px;
@@ -198,7 +200,7 @@
 
 .team p:last-child{
     color: rgb(192, 188, 188);
-    width: 700px;
+    width: auto;
     text-align: center;
     margin-top: 30px;
     font-size: 1.2rem;
@@ -303,7 +305,7 @@
         gap: 30px;
     }
     .team p:last-child{
-        width: 300px;
+        width: auto;
     }
     
 }
