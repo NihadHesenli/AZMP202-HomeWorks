@@ -29,3 +29,79 @@ header{
     opacity: 100%;
     color: white;
 }
+
+.head{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.features .row .col > i{
+    font-size: 60px;
+    padding: 15px;
+    display: inline-block;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#plan, #contact{
+    background-color: #F8F9FA;
+    padding: 50px 0;
+}
+
+
+#footer{
+    height: 200px;
+    padding: 50px 0;
+    background-color:#212529 
+}
+#comments{
+    padding: 50px 0;
+}
+
+.plan , .comments, .contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+hr{
+    margin: 0;
+}
+ .cards ul li i{
+    font-size: 10px;
+    margin-right: 7px;
+ }
+
+ .cards ul li{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+ }
+
+
+
+ .comment-card i{
+    font-size: 20px;
+ }
+
+ .contact-icon i{
+    background-color: aqua;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+ }
+
+.form{
+    margin: 0 250px;
+ }
