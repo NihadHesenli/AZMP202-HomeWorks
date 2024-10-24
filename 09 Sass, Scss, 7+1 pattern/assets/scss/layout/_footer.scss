@@ -1,0 +1,92 @@
+footer{
+    #footer-contact{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .footer-contact{
+            @include displayF(flex,space-between,center);
+            background-color: $secondary-color;
+            border: none;
+            border-radius: 6px;
+            padding: 80px;
+            @media only screen and (max-width:767px){
+                flex-direction: column;
+                row-gap: 50px;
+                padding: 30px;
+            }
+            .footer-contact-content{
+                @include displayF(flex,center,left);
+                flex-direction:column;
+                row-gap: 20px;
+                position: relative;
+
+                @media only screen and (max-width:767px){
+                    order: 1;
+                }
+
+                h1{
+                    color: $color-light;
+                    max-width: 600px;
+                    @media only screen and (max-width:767px){
+                        font-size: 40px;
+                        line-height: 48px;
+                    }
+                }
+
+            
+                p{
+                    @extend %text_gray;
+                    color: #FFFFFFA3;
+                    max-width: 500px;
+                }
+                .footer-contact-btn{
+                    button{
+                        @extend %white-btn;
+                        margin-top: 20px;
+                        border: 1px solid transparent;
+                        transition: all 0.3s;
+
+                        &:hover{
+                            background-color: transparent;
+                            border: 1px solid $color-light;
+                        }
+                    }
+    
+                }
+            }
+            .footer-contact-image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #agency{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .agency-content{
+            @include displayF(flex,space-between,flex-start);
+            nav{
+                margin-top: 15px;
+                @include displayF(flex,center,left);
+                flex-direction: column;
+                row-gap: 15px;
+            }
+
+            border-bottom: 1px solid $hr-color;
+            padding-bottom: 80px;
+
+            .agency-content-icons{
+                display: flex;
+                gap: 20px;
+                i{
+                    @include displayF(flex,center,center);
+                    width: 48px;
+                    height: 48px;
+                    background-color: $secondary-color;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+    }
+}

@@ -4,7 +4,7 @@
     border-radius: 6px;
     font-weight: 900;
     font-size: 14px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     color: $color-light;
 }
 %red-btn{
@@ -15,4 +15,42 @@
     font-size: 14px;
     padding: 20px 30px;
     color: $color-light;
+}
+
+%white-btn{
+    background-color: $color-light;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 15px 40px;
+    color: $primary-color;
+}
+
+%text_big{
+    font-weight:400;
+    font-size: 20px;
+    line-height: 32px;
+    color: $primary-color;
+}
+
+%text{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $primary-color;
+}
+
+%text_gray{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #391400A3;
+}
+
+%text_small{
+    font-weight:400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #391400A3;
 }

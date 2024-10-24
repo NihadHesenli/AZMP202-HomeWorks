@@ -1,5 +1,5 @@
 .container {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
 }
 * {
@@ -183,5 +183,9 @@
   }
   .p-sm-right-0 {
     padding-right: 0;
+  }
+
+  .container{
+    max-width: 90%;
   }
 }

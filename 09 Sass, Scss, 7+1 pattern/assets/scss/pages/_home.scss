@@ -3,21 +3,31 @@ main{
         background-color: $bg-color-mu;
         padding: 55px 0;
         .home-banner{
-            @include displayF();
+            @include displayF(flex,space-between,center);
             column-gap: 150px;
             @media only screen and (max-width:767px) {
                 flex-direction: column;
+                row-gap: 70px;
             }
             .home-banner-content{
                 @include displayF(flex,center,left);
                 flex-direction: column;
                 row-gap: 25px;
                 position: relative;
+                @media only screen and (max-width:767px){
+                    order: 1;
+                }
                 h1{
                     color: $color-light;
                     max-width: 535px;
                     position: relative;
                     z-index: 1;
+                    @media only screen and (max-width:767px){
+                        font-size: 56px;
+                        line-height: 64px;
+                        letter-spacing: -1px;
+
+                    }
                 }
                 p{
                     color: #FFFFFFA3;
@@ -28,6 +38,7 @@ main{
                 }
                 .banner-btn{
 
+                    
                     .work{
                         @extend %red-btn;
                         transition: all 0.3s;
@@ -37,6 +48,10 @@ main{
                             border: 1px solid $secondary-color
 
                         }
+
+                        @media only screen and (max-width:767px){
+                            padding: 16px 26px;
+                        }
                     }
                     .contact{
                         @extend %transparent-btn;
@@ -45,10 +60,14 @@ main{
                         margin-left:30px  ;
                         transition: all 0.3s;
                         width: 154px;
+                        height: 56px;
                         font-weight: 400;
 
                         &:hover{
                             background-color: rgba(255, 255, 255, 0.199);
+                        }
+                        @media only screen and (max-width:767px){
+                            padding: 16px 26px;
                         }
                     }
                 }
@@ -56,14 +75,27 @@ main{
                     position: absolute;
                     top: 0;
                     right: 20%;
+                    @media only screen and (max-width:767px){
+                        display: none;
+                    }
                 }
                 .banner-comment{
-                    @include displayF(flex,baseline,center);
+                    @include displayF(flex,baseline,flex-start);
                     margin-top: 50px;
                     .comment-content{
                         margin-left: 20px;
                         span{
                             color: $color-light
+                        }
+                    }
+
+                    .comment-img{
+                        @include displayF();
+
+                        img{
+                            @media only screen and (max-width:767px){
+                                align-items: flex-start;
+                            }
                         }
                     }
                 }
@@ -80,11 +112,18 @@ main{
         background-color: $bg-color-lu;
         padding: 55px 0;
         .logos{
-            @include displayF();
-            gap: 90px;
+            @include displayF(flex,space-between,center);
+            gap: 90px;  
+            padding: 40px 0;
+            border-bottom: 1px solid $hr-color;
+            ;
+            img{
+                width: 100%;
+            }
+            @media only screen and (max-width:767px) {
+                flex-direction: column;
+                row-gap: 20px;
 
-            @media only screen and(max-width:767px) {
-                
             }
         }
     }
