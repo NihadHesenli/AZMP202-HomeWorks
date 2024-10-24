@@ -1,0 +1,38 @@
+header{
+    #nav{
+        background-color: $bg-color-mu;
+        .nav{
+            height: 75px;
+            @include displayF(flex,space-between,center);
+            ul{ @include displayF();
+                column-gap: 100px;
+                li{
+                    a{
+                        color: $color-light;
+                        font-size: 16px;
+                        font-weight: 400;
+                        opacity: 0.6;
+                        transition: all 0.3s;
+                        &:hover{
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+
+            }
+
+            .nav-btn{
+                button{
+                    @extend %transparent-btn;
+                    transition: all 0.3s;
+
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.199);
+                    }
+                }
+            }
+
+        }
+    }
+}
