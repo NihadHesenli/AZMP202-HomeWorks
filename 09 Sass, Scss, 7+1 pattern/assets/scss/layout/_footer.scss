@@ -89,4 +89,15 @@ footer{
 
         }
     }
+    #footer-end{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .footer-end{
+            @include displayF(flex,space-between,center);
+            .footer-end-2{
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
 }

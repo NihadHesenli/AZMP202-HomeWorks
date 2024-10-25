@@ -53,4 +53,55 @@ header{
 
         }
     }
+    #about-me{
+        padding: 55px 0;
+        background-color: $bg-color-mu;
+        .about-me{
+            @include displayF();
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            h1{
+                color: $color-light;
+
+                @media only screen and (max-width:767px){
+                    font-size: 50px;
+                    letter-spacing: -1px;
+                    line-height: 64px;
+                }
+            }
+            p{
+                @extend %text_gray;
+                color: #FFFFFFA3;
+                max-width: 570px;
+            }
+        }
+    }
+    #blog-article{
+        padding:55px 0;
+        background-color: $bg-color-mu;
+
+        .blog-article{
+            @include displayF();
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            h1{
+                color: $color-light;
+
+                @media only screen and (max-width:767px){
+                    font-size: 50px;
+                    letter-spacing: -1px;
+                    line-height: 64px;
+                }
+            }
+            p{
+                @extend %text_gray;
+                color: #FFFFFFA3;
+                max-width: 570px;
+            }
+
+        }
+
+    }
 }

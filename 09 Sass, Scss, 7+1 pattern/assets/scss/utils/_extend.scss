@@ -15,6 +15,7 @@
     font-size: 14px;
     padding: 20px 30px;
     color: $color-light;
+    text-transform: uppercase;
 }
 
 %white-btn{
@@ -23,8 +24,10 @@
     border-radius: 6px;
     font-weight: 900;
     font-size: 14px;
-    padding: 15px 40px;
+    width: 170px;
+    height: 48px;
     color: $primary-color;
+    text-transform: uppercase;
 }
 
 %text_big{
@@ -53,4 +56,14 @@
     font-size: 14px;
     line-height: 24px;
     color: #391400A3;
+}
+
+%input{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    width: 270px;
+    height: 48px;
+    border: 1px solid $hr-color;
+    padding: 0 20px;
 }

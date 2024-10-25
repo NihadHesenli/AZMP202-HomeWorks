@@ -65,27 +65,47 @@ main #home-banner .home-banner .home-banner-content .banner-btn .work {
   font-size: 14px;
   padding: 20px 30px;
   color: #fff;
+  text-transform: uppercase;
 }
 
-footer #footer-contact .footer-contact .footer-contact-content .footer-contact-btn button {
+#newsletter .newsletter button, #blog-second-col .second-col-btn button, footer #footer-contact .footer-contact .footer-contact-content .footer-contact-btn button {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 6px;
   font-weight: 900;
   font-size: 14px;
-  padding: 15px 40px;
+  width: 170px;
+  height: 48px;
+  color: #391400;
+  text-transform: uppercase;
+}
+
+#blog-second-col .col-content p, main #blog-first-col .blog-first-col .col-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
   color: #391400;
 }
 
-footer #footer-contact .footer-contact .footer-contact-content p {
+#blog-second-col .col-content span, main #blog-first-col .blog-first-col .col-content span, footer #footer-contact .footer-contact .footer-contact-content p, header #blog-article .blog-article p, header #about-me .about-me p {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: rgba(57, 20, 0, 0.6392156863);
 }
 
+#newsletter .newsletter input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  width: 270px;
+  height: 48px;
+  border: 1px solid #F3D1BF;
+  padding: 0 20px;
+}
+
 h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 72px;
   line-height: 80px;
   letter-spacing: -2px;
@@ -94,7 +114,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: -1px;
@@ -102,7 +122,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   color: #391400;
@@ -112,6 +132,7 @@ h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  color: #391400;
 }
 
 h5 {
@@ -374,6 +395,58 @@ header #nav .nav .nav-menu {
     display: block;
   }
 }
+header #about-me {
+  padding: 55px 0;
+  background-color: #28293E;
+}
+header #about-me .about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+header #about-me .about-me h1 {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header #about-me .about-me h1 {
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 64px;
+  }
+}
+header #about-me .about-me p {
+  color: rgba(255, 255, 255, 0.6392156863);
+  max-width: 570px;
+}
+header #blog-article {
+  padding: 55px 0;
+  background-color: #28293E;
+}
+header #blog-article .blog-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+header #blog-article .blog-article h1 {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header #blog-article .blog-article h1 {
+    font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 64px;
+  }
+}
+header #blog-article .blog-article p {
+  color: rgba(255, 255, 255, 0.6392156863);
+  max-width: 570px;
+}
 
 footer #footer-contact {
   background-color: #fdf0e9;
@@ -465,6 +538,19 @@ footer #agency .agency-content .agency-content-icons i {
   height: 48px;
   background-color: #EF6D58;
   border-radius: 50%;
+}
+footer #footer-end {
+  background-color: #fdf0e9;
+  padding: 55px 0;
+}
+footer #footer-end .footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer #footer-end .footer-end .footer-end-2 {
+  display: flex;
+  gap: 30px;
 }
 
 main #home-banner {
@@ -599,4 +685,133 @@ main #logos .logos img {
     flex-direction: column;
     row-gap: 20px;
   }
+}
+
+main #blog-first-col {
+  padding: 55px 0;
+  background-color: #fdf0e9;
+}
+main #blog-first-col .blog-first-col {
+  border-bottom: 1px solid #F3D1BF;
+  padding-bottom: 55px;
+}
+main #blog-first-col .blog-first-col .col-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+main #blog-first-col .blog-first-col .col-content .col-image {
+  overflow: hidden;
+}
+main #blog-first-col .blog-first-col .col-content h3 {
+  width: 500px;
+}
+@media only screen and (max-width: 767px) {
+  main #blog-first-col .blog-first-col .col-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+main #blog-first-col .blog-first-col img {
+  width: 100%;
+  transition: all 0.3s;
+}
+main #blog-first-col .blog-first-col img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0.5);
+}
+
+#blog-second-col {
+  background-color: #fdf0e9;
+  padding: 55px 0;
+}
+#blog-second-col .second-col-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  border-bottom: 1px solid #F3D1BF;
+}
+#blog-second-col .second-col-btn button {
+  transition: all 0.3s;
+}
+#blog-second-col .second-col-btn button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #EF6D58;
+}
+#blog-second-col .col-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  gap: 30px;
+}
+#blog-second-col .col-content img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#blog-second-col .col-content img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0.5);
+}
+#blog-second-col .col-content .col-image {
+  overflow: hidden;
+}
+#blog-second-col .col-content h4 {
+  width: 380px;
+}
+@media only screen and (max-width: 767px) {
+  #blog-second-col .col-content h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+#newsletter {
+  padding: 55px 0;
+  background-color: #fdf0e9;
+}
+#newsletter .newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F3D1BF;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 767px) {
+  #newsletter .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #newsletter .newsletter .input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #newsletter .newsletter h3 {
+    font-size: 40px;
+  }
+}
+#newsletter .newsletter input {
+  width: 370px;
+  outline: none;
+}
+@media only screen and (max-width: 767px) {
+  #newsletter .newsletter input {
+    width: 333px;
+  }
+}
+#newsletter .newsletter button {
+  margin-left: 25px;
+  transition: all 0.3s;
+}
+#newsletter .newsletter button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #EF6D58;
 }/*# sourceMappingURL=main.css.map */
