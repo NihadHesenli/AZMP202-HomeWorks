@@ -111,12 +111,16 @@ main{
             row-gap: 20px;
         }
 
-        .input-btn{
-            @media only screen and (max-width:767px){
-                @include displayF(flex,center,flex-start);
-                
-            }
+        .input{
+          @include displayF();
+          @media only screen and (max-width:767px){
+            @include displayF(flex,center,flex-start);
+            flex-direction: column;
+            row-gap: 10px;
+            
         }
+        }
+
 
         h3{
             @media only screen and (max-width:767px){
@@ -127,10 +131,10 @@ main{
 
         input{
             @extend %input; 
-            width: 370px;
+            width: 350px;
             outline: none;
             @media only screen and (max-width:767px){
-                width: 333px;
+                width: 481px
             }
         }
 
@@ -144,6 +148,13 @@ main{
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 background-color: $secondary-color;
             }
+            
+              @media only screen and (max-width:767px){
+                  margin-left: 0px;
+                  width: 481px;
+                  
+              }
+          
 
             
         }

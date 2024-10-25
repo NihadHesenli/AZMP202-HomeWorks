@@ -1,0 +1,31 @@
+%transparent-btn{
+    background-color: transparent;
+    border: 1px solid #FFFFFF4B;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 15px 30px;
+    color: $color-light;
+}
+%red-btn{
+    background-color: $secondary-color;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 20px 30px;
+    color: $color-light;
+    text-transform: uppercase;
+}
+
+%white-btn{
+    background-color: $color-light;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    width: 170px;
+    height: 48px;
+    color: $primary-color;
+    text-transform: uppercase;
+}

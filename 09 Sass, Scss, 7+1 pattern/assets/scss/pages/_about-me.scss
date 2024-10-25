@@ -1,0 +1,235 @@
+#gabriel-img{
+    padding: 3rem    0;
+    background-color: $bg-color-lu;
+    .gabriel-img{
+        @include displayF ();
+        img{
+            width: 100%;
+        }
+    }
+}
+
+#gabriel-content{
+    background-color: $bg-color-lu;
+    padding: 3rem 0;
+    @include displayF();
+    .gabriel-cotent{
+        max-width: 570px;
+        @include displayF(flex,center,left);
+        flex-direction: column;  
+        row-gap: 20px;
+        h5{
+            text-align: left;
+        }
+
+        h2{
+            margin-bottom: 50px;
+            @media only screen and (max-width:767px){
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+
+        p{
+            @extend %text_gray
+        }
+    }
+}
+
+
+#sector-1{
+    background-color: $bg-color-lu;
+    @include displayF();
+    .container{
+        
+        .row{
+            
+            .col-6{
+                @include displayF();
+                gap: 20px;
+                font-size: 30px;
+                width: 586px;
+                height: 176px;
+                border: 1px solid rgba($color: #000000, $alpha: 0.5);
+                .icons{
+                    width: 112px;
+                   height:  112px;
+                   background-color: #EF6C57;
+                   border-radius: 50%;
+                   @include displayF();
+                          i{
+                            font-size: 3rem;
+                   color: #ffffff;
+                           }
+                }
+                h2{
+                    
+                    color: #391400;
+
+                    font-size: 40px;
+                }
+                p{
+                   
+                    color: #391400;
+font-size: 20px;
+                }
+            }
+        }
+    }
+}
+#sector-2{
+    background-color: $bg-color-lu;
+    @include displayF();
+   padding: 3rem 0;
+    .container{
+        // text-align: center;
+        h5{
+            font-size: 1rem;
+            color: #EF6D58;
+            letter-spacing: 5px;
+
+        }
+        h3{
+            font-size: 40px;
+           color: #391400;
+
+        }
+        p{
+            font-size: 1rem;
+            color: #391400A3;
+
+
+        }
+    }
+}
+#sector-3{
+    background-color: $bg-color-lu;
+
+    @include displayF();
+   padding: 3rem 0;
+   .video{
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+   }
+  .text{
+    p{
+        color: #391400A3;
+        
+        font-size: 1rem;
+       }
+       .text-1{
+        padding: 3rem 0;
+       }
+       .text-2{
+        padding: 3rem 0;
+       }
+  }
+}
+#sector-4{
+    background-color: $bg-color-lu;
+    @include displayF();
+   padding: 3rem 0;
+  .text{
+    p{
+        color: #391400A3;         
+        font-size: 1rem;
+       }
+       .text-1{
+        padding: 3rem 0;
+       }
+       .text-2{
+        padding: 3rem 0;
+       }
+  }
+}
+
+#sector-5{
+        background-color: $bg-color-lu;
+       padding: 3rem 0;
+       
+     .container{
+        padding: 3rem 0;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+        @include displayF();
+        .texts-2{
+       
+            h5{
+                font-size: 1rem;
+                color: #EF6D58;
+                letter-spacing: 5px;
+    
+            }
+            h3{
+                font-size: 40px;
+               color: #391400;
+    
+            }
+            p{
+                font-size: 1rem;
+                color: #391400A3;
+    
+    
+            }
+          }
+     }
+    }
+    #about-us-pics-info {
+        background-color: #f9e5da;
+        padding: 3rem 0;
+    
+        .inf-pic {
+          position: relative;
+          top: -100px;
+          .one {
+            position: relative;
+            
+          }
+          .two {
+            position: absolute;
+            top: 58px;
+            left: 58px
+          }
+        }
+      }
+      .abot-class {
+        @extend %red-btn;
+        cursor: pointer;
+      }
+      h4 {
+        font-size: 24px;
+        padding: 1.3rem 0;
+      }
+    
+      .about-parag {
+        text-align: left;
+        font-size: 23px;
+        width: 370px;
+        @media only screen and (max-width:767px){
+          padding: 2rem 0;
+        }
+    
+      }
+      .pics-two{
+        position: relative;
+        .pic1{
+          position: relative;
+          z-index: 1;
+        }
+        .pic2{
+          position: absolute;
+          top: -5px;
+          left: 50px;
+        }
+      }
+      .main-infos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media only screen and (max-width:767px){
+          flex-wrap:wrap ;
+        }
+      }
+      

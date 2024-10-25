@@ -65,11 +65,24 @@ footer{
         padding: 55px 0;
         .agency-content{
             @include displayF(flex,space-between,flex-start);
+            @media only screen and (max-width:767px){
+                @include displayF();
+                flex-direction: column;
+                text-align: center;
+                row-gap: 55px;
+            }
+            
+            }
             nav{
                 margin-top: 15px;
                 @include displayF(flex,center,left);
                 flex-direction: column;
                 row-gap: 15px;
+                ul{
+                    li{
+                        @extend %text
+                    }
+                }
             }
 
             border-bottom: 1px solid $hr-color;
@@ -94,10 +107,25 @@ footer{
         padding: 55px 0;
         .footer-end{
             @include displayF(flex,space-between,center);
+            @media only screen and (max-width:767px){
+                @include displayF();
+                flex-direction: column;
+                text-align: center;
+                row-gap: 55px;
+            }
+            p{
+                @extend%text_gray;
+                @media only screen and (max-width:767px){
+                   max-width: 250px;
+                   line-height: 40px;
+                }
+            }
             .footer-end-2{
                 display: flex;
                 gap: 30px;
+                p{
+                    @extend %text
+                }
             }
         }
     }
-}

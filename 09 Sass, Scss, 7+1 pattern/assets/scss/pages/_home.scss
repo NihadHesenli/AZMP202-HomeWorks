@@ -108,6 +108,73 @@ main{
             }
         }
     }
+    #home-about{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .home-about{
+            @include displayF(flex,space-between,center);
+            column-gap: 150px;
+            @media only screen and (max-width:767px) {
+                flex-direction: column;
+                row-gap: 70px;
+            }
+            .home-about-image{
+                img{
+                    width: 100%;
+                }
+            }
+            .home-about-content{
+                @include displayF(flex,center,left);
+                flex-direction: column;
+                row-gap: 25px;
+                h2{
+                    max-width: 535px;
+                    @media only screen and (max-width:767px){
+                        font-size: 40px;
+                        line-height: 48px;
+                    }
+                }
+                .first-p{
+                    @extend %text
+                }
+                p{
+                    max-width: 470px;
+                    @extend %text_gray
+                }
+                .about-content-btn{
+
+                    button{
+                        @extend %white-btn;
+                        transition: all 0.3s;
+
+                        &:hover{
+                            background-color: $secondary-color;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+                }
+    
+            }
+
+        }
+    }
+    #home-showing{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .home-showing{
+            .col-4{
+                padding: 0;
+                .showing-number{
+                    border: 1px solid $hr-color;
+                    padding: 40px;
+                    @include displayF(flex,center,left);
+                    flex-direction: column;
+                    row-gap: 25px;
+
+                }
+            }
+        }
+    }
     #logos{
         background-color: $bg-color-lu;
         padding: 55px 0;
