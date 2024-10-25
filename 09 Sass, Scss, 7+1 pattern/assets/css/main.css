@@ -492,13 +492,13 @@ footer #footer-contact .footer-contact .footer-contact-image img {
 footer #agency {
   background-color: #fdf0e9;
   padding: 55px 0;
-  border-bottom: 1px solid #F3D1BF;
-  padding-bottom: 80px;
 }
 footer #agency .agency-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 1px solid #F3D1BF;
+  padding-bottom: 80px;
 }
 @media only screen and (max-width: 767px) {
   footer #agency .agency-content {
