@@ -1,0 +1,88 @@
+main{
+    #portfolio{
+        background-color: $bg-color-lu;
+        padding: 55px 0;
+        .portfolio-select{
+            display: none;
+            padding: 0 1rem 50px 1rem;
+            select{
+                @extend %input;
+                @extend %text_gray;
+                width: 100%;
+            }
+
+            @media only screen and (max-width:767px){
+                @include displayF();
+            }
+
+        }
+        .portfolio-nav{
+            padding-bottom: 50px;
+
+            @media only screen and (max-width:767px){
+                display: none;
+            }
+            ul{
+                @include displayF();
+                gap: 40px;
+                li{
+                    @extend %text_gray;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover{
+                        @extend %text
+                    }
+                }
+            }
+        }
+        .portfolio-cards{
+            .portfolio-card{
+                position: relative;
+                .card-img{
+                    overflow: hidden;
+                }
+                img{
+                    width: 100%;
+                    transition: ease-in 0.3s;
+                    &:hover{
+                        transform: scale(1.1);
+                        filter: grayscale(0.4);
+                    }
+                }
+                .card-info{
+                    position: absolute;
+                    top: 68%;
+                    left: 11%;
+                    @include displayF(flex,center,flex-start);
+                    flex-direction: column;
+                    row-gap: 10px;
+                    p{
+                        background-color: $color-light;
+                        padding: 3px 15px;
+                        border-radius: 30px;
+                        @extend %text
+                    }
+                    h3{
+                        color: $color-light
+                    }
+                }
+
+            }
+        }
+        .portfolio-btn{
+            @include displayF();
+            padding-top: 55px;
+            button{
+                @extend %white-btn;
+                transition: all 0.3s;
+            
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: $secondary-color;
+            }
+            }
+
+        }
+    }
+}

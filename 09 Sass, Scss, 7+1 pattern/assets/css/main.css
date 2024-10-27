@@ -54,14 +54,14 @@ table {
   color: #391400;
 }
 
-main #home-about .home-about .home-about-content .first-p, #footer-end .footer-end .footer-end-2 p, footer #agency nav ul li {
+main #portfolio .portfolio-cards .portfolio-card .card-info p, main #portfolio .portfolio-nav ul li:hover, main #home-about .home-about .home-about-content .first-p, #footer-end-personal .footer-end .footer-end-2 p, #personal .personal-content nav ul li, #footer-end .footer-end .footer-end-2 p, footer #agency nav ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #391400;
 }
 
-#gabriel-content .gabriel-cotent p, #blog-second-col .col-content span, main #blog-first-col .blog-first-col .col-content span, main #home-about .home-about .home-about-content p, #footer-end .footer-end p, footer #footer-contact .footer-contact .footer-contact-content p, header #banner-name .banner-name p {
+main #portfolio .portfolio-nav ul li, main #portfolio .portfolio-select select, #gabriel-content .gabriel-cotent p, #blog-second-col .col-content span, main #blog-first-col .blog-first-col .col-content span, main #home-about .home-about .home-about-content p, #footer-end-personal .footer-end p, #footer-end .footer-end p, footer #footer-contact .footer-contact .footer-contact-content p, header #banner-name .banner-name p {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -129,7 +129,7 @@ main #home-banner .home-banner .home-banner-content .banner-btn .contact, header
   text-transform: uppercase;
 }
 
-#newsletter .newsletter button, #blog-second-col .second-col-btn button, main #home-about .home-about .home-about-content .about-content-btn button, footer #footer-contact .footer-contact .footer-contact-content .footer-contact-btn button {
+main #portfolio .portfolio-btn button, #newsletter .newsletter button, #blog-second-col .second-col-btn button, main #home-about .home-about .home-about-content .about-content-btn button, footer #footer-contact .footer-contact .footer-contact-content .footer-contact-btn button {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 6px;
@@ -141,7 +141,7 @@ main #home-banner .home-banner .home-banner-content .banner-btn .contact, header
   text-transform: uppercase;
 }
 
-#newsletter .newsletter input {
+main #portfolio .portfolio-select select, #newsletter .newsletter input {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -561,6 +561,91 @@ footer #agency .agency-content-icons i {
   display: flex;
   gap: 30px;
 }
+#personal {
+  background-color: #28293E;
+  padding: 55px 0;
+}
+#personal .personal-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #3A3C56;
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 767px) {
+  #personal .personal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 55px;
+  }
+}
+#personal .personal-content h4 {
+  color: #fff;
+}
+#personal .personal-content nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#personal .personal-content nav ul li {
+  color: #fff;
+}
+#personal .personal-content .personal-content-icons {
+  display: flex;
+  gap: 20px;
+}
+#personal .personal-content .personal-content-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #EF6D58;
+  border-radius: 50%;
+}
+
+#footer-end-personal {
+  background-color: #28293E;
+  padding: 55px 0;
+}
+#footer-end-personal .footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  #footer-end-personal .footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 55px;
+  }
+}
+#footer-end-personal .footer-end p {
+  color: rgba(255, 255, 255, 0.6392156863);
+}
+@media only screen and (max-width: 767px) {
+  #footer-end-personal .footer-end p {
+    max-width: 250px;
+    line-height: 40px;
+  }
+}
+#footer-end-personal .footer-end .footer-end-2 {
+  display: flex;
+  gap: 30px;
+}
+#footer-end-personal .footer-end .footer-end-2 p {
+  color: #fff;
+}
+
 main #home-banner {
   background-color: #28293E;
   padding: 55px 0;
@@ -1124,4 +1209,86 @@ h4 {
   .main-infos {
     flex-wrap: wrap;
   }
+}
+
+main #portfolio {
+  background-color: #fdf0e9;
+  padding: 55px 0;
+}
+main #portfolio .portfolio-select {
+  display: none;
+  padding: 0 1rem 50px 1rem;
+}
+main #portfolio .portfolio-select select {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  main #portfolio .portfolio-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main #portfolio .portfolio-nav {
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  main #portfolio .portfolio-nav {
+    display: none;
+  }
+}
+main #portfolio .portfolio-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+main #portfolio .portfolio-nav ul li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main #portfolio .portfolio-cards .portfolio-card {
+  position: relative;
+}
+main #portfolio .portfolio-cards .portfolio-card .card-img {
+  overflow: hidden;
+}
+main #portfolio .portfolio-cards .portfolio-card img {
+  width: 100%;
+  transition: ease-in 0.3s;
+}
+main #portfolio .portfolio-cards .portfolio-card img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0.4);
+}
+main #portfolio .portfolio-cards .portfolio-card .card-info {
+  position: absolute;
+  top: 68%;
+  left: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 10px;
+}
+main #portfolio .portfolio-cards .portfolio-card .card-info p {
+  background-color: #fff;
+  padding: 3px 15px;
+  border-radius: 30px;
+}
+main #portfolio .portfolio-cards .portfolio-card .card-info h3 {
+  color: #fff;
+}
+main #portfolio .portfolio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+}
+main #portfolio .portfolio-btn button {
+  transition: all 0.3s;
+}
+main #portfolio .portfolio-btn button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #EF6D58;
 }/*# sourceMappingURL=main.css.map */
