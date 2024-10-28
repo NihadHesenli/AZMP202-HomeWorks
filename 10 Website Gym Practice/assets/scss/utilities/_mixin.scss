@@ -1,0 +1,12 @@
+@mixin displayF ($flex: flex ,$jus: center,$align: center){
+    display: $flex;
+    justify-content: $jus;
+    align-items: $align;
+}
+
+@mixin txtP($color,$fontS,$fontW,$lineH){
+    color: $color;
+    font-size: $fontS;
+    font-weight: $fontW;
+    line-height: $lineH;
+}

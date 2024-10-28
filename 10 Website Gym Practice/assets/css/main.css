@@ -1,0 +1,484 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#mass .mass-calc button {
+  background-color: #f6214b;
+  line-height: 42px;
+  border-radius: 25px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#mass .mass-calc input {
+  color: #fff;
+  font-size: 12px;
+  padding: 12px;
+  border: 1px solid #f96481;
+  width: 300px;
+  line-height: 1.5rem;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.2rem;
+}
+
+h4 {
+  font-size: 18px;
+  color: #222;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #222;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625rem;
+}
+
+#mass .mass-calc button {
+  background-color: #fff;
+  color: #222;
+  transition: all 0.3s;
+}
+#mass .mass-calc button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+#mass .mass-calc input:focus {
+  outline: 3px solid blueviolet;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+*::-moz-selection {
+  background-color: #f6214b;
+}
+
+*::selection {
+  background-color: #f6214b;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  padding: 1rem;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  padding: 1rem;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 1rem;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  padding: 1rem;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  padding: 1rem;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 1rem;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  padding: 1rem;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding: 1rem;
+}
+
+.col-9 {
+  width: 75%;
+  padding: 1rem;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  padding: 1rem;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  padding: 1rem;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.p-left-0 {
+  padding-left: 0;
+}
+
+.p-right-0 {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+    padding: 1rem;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+    padding: 1rem;
+  }
+  .col-md-3 {
+    width: 25%;
+    padding: 1rem;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+    padding: 1rem;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+    padding: 1rem;
+  }
+  .col-md-6 {
+    width: 50%;
+    padding: 1rem;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+    padding: 1rem;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+    padding: 1rem;
+  }
+  .col-md-9 {
+    width: 75%;
+    padding: 1rem;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+    padding: 1rem;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+    padding: 1rem;
+  }
+  .col-md-12 {
+    width: 100%;
+    padding: 1rem;
+  }
+  .p-md-left-0 {
+    padding-left: 0;
+  }
+  .p-md-right-0 {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+    padding: 1rem;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+    padding: 1rem;
+  }
+  .col-sm-3 {
+    width: 25%;
+    padding: 1rem;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+    padding: 1rem;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+    padding: 1rem;
+  }
+  .col-sm-6 {
+    width: 50%;
+    padding: 1rem;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+    padding: 1rem;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+    padding: 1rem;
+  }
+  .col-sm-9 {
+    width: 75%;
+    padding: 1rem;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+    padding: 1rem;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+    padding: 1rem;
+  }
+  .col-sm-12 {
+    width: 100%;
+    padding: 1rem;
+  }
+  .p-sm-left-0 {
+    padding-left: 0;
+  }
+  .p-sm-right-0 {
+    padding-right: 0;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+header #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+header #header .header-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #header .header-upper span {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+header #header .header-upper img {
+  cursor: pointer;
+}
+header #header .header-upper .header-upper-tel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header #header .header-upper .header-upper-tel a {
+  font-size: 16px;
+}
+header #header .header-upper .header-upper-tel i {
+  background-color: #f6214b;
+  padding: 30px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+header #header .header-lower {
+  padding: 20px 0;
+}
+header #header .header-lower ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header #header .header-lower ul .nav-first {
+  color: #f6214b;
+}
+header #header .header-lower ul li a {
+  transition: all 0.3s;
+}
+header #header .header-lower ul li a:hover {
+  color: #f6214b;
+}
+
+main #image {
+  background-image: url(https://preview.colorlib.com/theme/gym/img/header-bg.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 134px;
+  height: 85.5vh;
+  position: relative;
+}
+main #image .ovarlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main #image .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+main #image .header-content h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 4rem;
+}
+main #image .header-content p {
+  color: #fff;
+  text-transform: uppercase;
+}
+main #offer {
+  padding: 120px 0;
+}
+main #offer .offer-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+main #offer .offer-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  text-align: center;
+}
+main #offer .offer-cards .offer-card {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  box-shadow: rgba(246, 33, 75, 0.3) 0px 0px 60px;
+}
+main #mass {
+  background-color: #f6214b;
+  padding: 100px 0;
+}
+main #mass .mass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 90px;
+}
+main #mass .mass .mass-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+main #mass .mass .mass-head h1 {
+  color: #fff;
+}
+main #mass .mass .mass-head p {
+  color: #fff;
+}
+main #mass .mass .mass-calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */

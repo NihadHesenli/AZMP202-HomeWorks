@@ -1,0 +1,10 @@
+#mass{
+    .mass-calc{
+        input{
+            @extend %weight-inpt;
+            &:focus{
+                outline: 3px solid blueviolet;
+            }
+        }
+    }
+}

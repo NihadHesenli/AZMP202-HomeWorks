@@ -1,0 +1,55 @@
+header{
+    #header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: white;
+        .header-upper{
+            @include displayF(flex,space-between,center);
+            span{
+                @include txtP(black,14px,500,1.625rem);
+            }
+
+            img{
+                cursor: pointer;
+            }
+            .header-upper-tel{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                a{
+                    font-size: 16px;
+                }
+                i{
+                    background-color: $primary-color;
+                    padding: 30px;
+                    font-size: 16px;
+                    color: $color-light;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .header-lower{
+            padding: 20px 0;
+            ul{
+                @include displayF();
+                gap: 30px;
+                
+                .nav-first{
+                    color: $primary-color
+                }
+                li{
+                    a{
+                        transition: all 0.3s;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

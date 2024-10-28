@@ -1,0 +1,14 @@
+#mass{
+    .mass-calc{
+        button{
+            @extend %pimary-btn;
+            background-color: $color-light;
+            color: $color-dark;
+            transition: all 0.3s;
+            &:hover{
+                background-color: transparent;
+                border: 1px solid $color-light;
+            }
+        }
+    }
+}
