@@ -125,7 +125,19 @@
 
 // task-10
 
-// -
+// for (let number = 2; number <= 100; number++) {
+//     isPrime = true;
+//     for (let i = 2; i <= Math.sqrt(number); i++) {
+//         if (number % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+        
+//     }
+//     if (isPrime) {
+//         console.log(number)     
+//     }
+// }
 
 // task-11
 
@@ -187,5 +199,61 @@
 
 // console.log(sumPrice);
 
+
+// Daxil olunan ədədin array-də olub olmadığını təyin edən proqram tərtib edin
+
+let arrayNumbers=[34,23,52,53,75,123,543,87,1,31]
+
+// let number = prompt("eded daxil et")
+
+// for (let i = 0; i < arrayNumbers.length; i++) {
+//     if (arrayNumbers[i] = number) {
+//         alert("Bu eded var");
+//         break
+        
+//     }
+    
+// }
+
+// tələbələr array-ində tələbələrin ortalaması ən yüksək olanı, ortalaması 90-dan yuxarı olanları tapan proqram yazın
+
+// const students = [
+//     { name: "Ali", scores: [90, 85, 92] },
+//     { name: "Mammal", scores: [75, 80, 85] },
+//     { name: "Camil", scores: [90, 95, 85] },
+//     { name: "Davud", scores: [100, 100, 100] }
+//   ]; 
+
+//   for (let i = 0; i < students.length; i++) {
+    
+//     let scoresTotal = 0
+//     for (let j = 0; j < students[i].scores.length; j++) {
+//         scoresTotal += students[i].scores[j]
+        
+//     }
+//     let avarageScores = scoresTotal / students[i].scores.length
+//     console.log(avarageScores);
+    
+//   }
+
+// Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).
+
+// let word = ("ana")
+  
+// let wordReverse= "";
+
+// for (let i = 0; i < word.length; i++) {
+//     if (word[i] == word[word.length-1-i]) {
+//         console.log("this word is polidrome");
+//         break
+        
+        
+//     }else{
+//         console.log("this word is not polidorme");
+//         break
+        
+//     }
+    
+// }
 
 
