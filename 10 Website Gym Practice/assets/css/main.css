@@ -134,10 +134,6 @@ p {
   text-decoration: none;
 }
 
-*::-moz-selection {
-  background-color: #f6214b;
-}
-
 *::selection {
   background-color: #f6214b;
 }
@@ -335,7 +331,7 @@ header #header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 8;
   background-color: white;
 }
 header #header .header-upper {
@@ -439,8 +435,7 @@ main #offer .offer-cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
   text-align: center;
 }
 main #offer .offer-cards .offer-card {

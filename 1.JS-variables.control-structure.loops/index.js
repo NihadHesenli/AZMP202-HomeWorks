@@ -125,20 +125,7 @@
 
 // task-10
 
-// for (let number = 2; number <= 100; number++){
-//     let IsPrime=true
-//     for (let i = 0; i <=100 ; i++) {
-//         if (number%i===0) {
-//             IsPrime:false;
-//             break
-//         }else{
-//             console.log(number);
-//             break
-            
-//         }
-   
-//     }
-// }
+// -
 
 // task-11
 
