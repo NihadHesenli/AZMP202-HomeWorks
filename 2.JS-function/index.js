@@ -18,9 +18,8 @@
             
 //         }
 //     }else{
-//         for (let i = currentPlace; i > targetChange; i++) {
+//         for (let i = currentPlace; i > targetChange; i--) {
 //             array[i]=array[i-1]
-        
 //         }
 //     }
 //     array[targetChange]=hollowaray
@@ -30,7 +29,7 @@
     
 // }
 
-// console.log(arrayPlaceChanger([10,23,42,53],0,2));
+// console.log(arrayPlaceChanger([10,23,42,53],3,1));
 
 
 
@@ -60,16 +59,17 @@
 // --
 
 // Daxil edilən iki arrayi birləşdirən funksiya yazın.
+
 // let arrayGlue = (array_1,array_2) =>{
 //     let hollowArray1 = []
 //     for (let i = 0; i < array_1.length; i++) {
-//         hollowArray1.push(array_1)
-//         break
+//         hollowArray1.push(array_1[i])
+        
         
 //     }
 //     for (let j = 0; j < array_2.length; j++) {
-//         hollowArray1.push(array_2)
-//         break
+//         hollowArray1.push(array_2[j])
+        
         
 //     }
 //     return hollowArray1
