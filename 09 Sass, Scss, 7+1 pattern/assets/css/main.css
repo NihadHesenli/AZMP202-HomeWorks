@@ -365,7 +365,8 @@ header #nav .nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 header #nav .nav ul li a {
   color: #fff;
@@ -653,7 +654,8 @@ main #home-banner .home-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 150px;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
 }
 @media only screen and (max-width: 767px) {
   main #home-banner .home-banner {
@@ -765,7 +767,8 @@ main #home-about .home-about {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 150px;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
 }
 @media only screen and (max-width: 767px) {
   main #home-about .home-about {
