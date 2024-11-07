@@ -111,7 +111,12 @@ let arr = [
 
 // 6) "name"-i en uzun olan obyektin key'ni tapin
 
-// -
+ const arrLongerName = arr.reduce((longest,current) => {
+  return current.name.length < longest.name.length ? longest : current
+})
+
+console.log(arrLongerName.key);
+
 
 // 7)  "name"-i en uzun olan obyektin indexin kvadratini hesablayin
 
