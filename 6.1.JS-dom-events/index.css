@@ -50,7 +50,7 @@ form button:hover {
     text-align: center;
 }
 
-.products {
+#products {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;

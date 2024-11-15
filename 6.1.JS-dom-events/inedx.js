@@ -1,26 +1,34 @@
 const addButton = document.getElementById('add-button')
-const productsList = document.getElementById('products-list');
 addButton.addEventListener('click', ()=>{
     const title = document.getElementById('title').value
     const price = document.getElementById('price').value;
     const description = document.getElementById('description').value;
     const image = document.getElementById('image').value;
     if (title && price && description && image) {
-        const productCard = document.createElement('div')
-        productCard.className = 'product-card'
-        productCard.innerHTML = `
+        const productCardJS = document.createElement('div')
+        productCardJS.className = 'product-card';
+        productCardJS.innerHTML = `
         <img src="${image}" alt="Product">
-                    <div class="details">
-                        <h3>${title}</h3>
-                        <p>${description}</p>
-                        <p class="price">${price}</p>
-                    </div>
-                    <div class="actions">
-                        <button class="details-btn">Details</button>
-                        <button class="delete-btn">Delete</button>
-                    </div>
+        <div class="details">
+          <h3>${title}</h3>
+           <p>${description}</p>
+        <p class="price">${price}</p>
+        </div>
+        <div class="actions">
+        <button class="details-btn">Details</button>
+        <button class="delete-btn">Delete</button>
+        </div>
         `
-        productsList.appendChild(productCard)
+        const productsList = document.getElementById('products');
+        productsList.appendChild(productCardJS)
+
+        const deleteButton = productCardJS.querySelectorAll('.delete-btn')
+        deleteButton.forEach((deleteButton) =>{
+            deleteButton.addEventListener('click' , ()=>{
+                productCardJS.remove()
+            })
+        })
+        
 
         document.getElementById('title').value = ''
         document.getElementById('price').value = '';
@@ -30,3 +38,5 @@ addButton.addEventListener('click', ()=>{
         alert('butun xanalari doldurun')
     }
 })
+
+
