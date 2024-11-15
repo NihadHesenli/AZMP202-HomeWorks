@@ -123,3 +123,26 @@ form button:hover {
 .product-card .actions .delete-btn:hover {
     background-color: #c82333;
 }
+
+#search{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#search input{
+    padding: 5px;
+    width: 20%;
+}
+
+#search button{
+    width: 70px;
+    height: 35px;
+    border: 1px solid transparent;
+    background-color:#28a745;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#search button:hover{
+    background-color: #1e7e34;
+}

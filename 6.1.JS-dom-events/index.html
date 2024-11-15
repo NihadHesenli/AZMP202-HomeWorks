@@ -11,15 +11,27 @@
         <div class="form-container">
             <h1>Add Form</h1>
             <form>
+                <label for="title">Title</label>
                 <input type="text" id="title" placeholder="Title" required>
+                <label for="price">Price</label>
                 <input type="text" id="price" placeholder="Price" required>
+                <label for="description">Description</label>
                 <input type="text" id="description" placeholder="Description" required>
+                <label for="image">Image</label>
                 <input type="text" id="image" placeholder="Image" required>
-                <button type="submit" id="add-button">Add</button>
+                <div class="add-btn">
+                    <button type="submit" id="add-button">Add</button>
+                </div>
             </form>
         </div>
         <div class="products-container">
             <h1>Products</h1>
+            <div id="search">
+                <input type="text" placeholder="Search The Name Of Product" id="search-input">
+                <div class="price-btn">
+                    <button id="price">Default</button>
+                </div>
+            </div>
             <div id="products">
                 <div class="product-card">
                     <img src="./81fPKd-2AYL._AC_SL1500_.jpg" alt="Product">
@@ -33,7 +45,6 @@
                         <button class="delete-btn">Delete</button>
                     </div>
                 </div>
-
                 <div class="product-card">
                     <img src="./71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="Product">
                     <div class="details">

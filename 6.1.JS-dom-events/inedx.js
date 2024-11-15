@@ -4,7 +4,7 @@ addButton.addEventListener('click', ()=>{
     const price = document.getElementById('price').value;
     const description = document.getElementById('description').value;
     const image = document.getElementById('image').value;
-    if (title && price && description && image) {
+    
         const productCardJS = document.createElement('div')
         productCardJS.className = 'product-card';
         productCardJS.innerHTML = `
@@ -12,7 +12,7 @@ addButton.addEventListener('click', ()=>{
         <div class="details">
           <h3>${title}</h3>
            <p>${description}</p>
-        <p class="price">${price}</p>
+        <p class="price">$${price}</p>
         </div>
         <div class="actions">
         <button class="details-btn">Details</button>
@@ -22,21 +22,36 @@ addButton.addEventListener('click', ()=>{
         const productsList = document.getElementById('products');
         productsList.appendChild(productCardJS)
 
-        const deleteButton = productCardJS.querySelectorAll('.delete-btn')
-        deleteButton.forEach((deleteButton) =>{
-            deleteButton.addEventListener('click' , ()=>{
-                productCardJS.remove()
-            })
-        })
         
-
+        
         document.getElementById('title').value = ''
         document.getElementById('price').value = '';
         document.getElementById('description').value = '';
         document.getElementById('image').value = '';
-    }else{
-        alert('butun xanalari doldurun')
+        
+    })
+    
+const productsList = document.getElementById('products');
+productsList.addEventListener('click', (event) => {
+if (event.target.classList.contains('delete-btn')) {
+        const productCard = event.target.closest('.product-card'); 
+        if (productCard) {
+            productCard.remove(); 
+        }
     }
+    
+});
+
+const product = document.querySelectorAll('.product-card')
+
+product.forEach((elem) =>{
+    const inputTitle = document.getElementById('search-input')
+    inputTitle.addEventListener('input' , ()=>{
+        const filteredProducts = elem;
+    })
+
 })
 
 
+
+ 
