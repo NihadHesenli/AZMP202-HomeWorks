@@ -42,14 +42,38 @@ if (event.target.classList.contains('delete-btn')) {
     
 });
 
-const product = document.querySelectorAll('.product-card')
-
-product.forEach((elem) =>{
-    const inputTitle = document.getElementById('search-input')
-    inputTitle.addEventListener('input' , ()=>{
-        const filteredProducts = elem;
+const searchInput = document.getElementById('search-input')
+searchInput.addEventListener('input', ()=>{
+    const searchValue = searchInput.value.toLowerCase()
+    const product = document.querySelectorAll('.product-card')
+    product.forEach((product) =>{
+        const title = product.querySelector('.details h3').textContent.toLowerCase()
+        if (title.includes(searchValue)) {
+            product.style.display = ''
+        }else{
+            product.style.display = 'none'
+        }
     })
+})
 
+
+const pricebutton = document.getElementById('price')
+pricebutton.addEventListener('click' , ()=>{
+    const productArray = Array.from(document.querySelectorAll('.product-card'))
+    const priceContent = pricebutton.textContent.trim()
+    productArray.sort((a,b)=>{
+        const priceA = a.querySelector('.price').textContent.replace('$','')
+        const priceB = b.querySelector('.price').textContent.replace('$','')
+        if (priceContent === 'Default') {
+            priceContent = 'Sort By Ascending'
+            return priceA - priceB
+        }else if(priceContent === 'Sort By Ascending'){
+            priceContent = 'Sort By Descending'
+            return priceB - priceA
+        }else{
+            priceContent = 'Default'
+        }
+    })
 })
 
 
