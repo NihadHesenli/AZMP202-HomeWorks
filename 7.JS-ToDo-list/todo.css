@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.todo-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    margin: 10px 0;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+}
+
+.input input{
+    width: 50%;
+    padding: 6px 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 54.8%;
+    gap: 10px;
+    
+}
+
+.todos-btn{
+    padding: 10px;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.add , .all-todos{
+    background-color:deepskyblue;
+    transition: all 500ms;
+}
+
+.add:hover , .all-todos:hover{
+    background-color: rgb(14, 158, 206);
+}
+
+.complete-todos{
+    background-color: green;
+    transition: all 500ms;
+}
+
+.complete-todos:hover{
+    background-color: rgb(1, 88, 1);
+}
+
+.pending-todos{
+    background-color: darkorange;
+    color: black;
+    transition: all 500ms;
+}
+
+.pending-todos:hover{
+    background-color: rgba(255, 140, 0, 0.747);
+}
+
+.clear-todos{
+    background-color: red;
+    transition: all 500ms;
+}
+
+.clear-todos:hover{
+    background-color: rgb(196, 5, 5);
+}
+.todos{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.todo{
+    background-color: rgba(172, 255, 47, 0.329);
+    width: 55.2%;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-list-input{
+    display: flex;
+    gap: 10px;
+}
+
+.list-btn{
+    padding: 12px;
+    font-size: 1.3rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit{
+    background-color: green;
+    transition: all 500ms;
+}
+.edit:hover{
+    background-color: rgb(1, 88, 1);
+}
+
+.delete{
+    background-color: red;
+    transition: all 500ms;
+}
+
+.delete:hover{
+    background-color: rgb(196, 5, 5);
+}
+

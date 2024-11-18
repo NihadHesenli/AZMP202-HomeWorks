@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-head">
+            <h1>ToDo App</h1>
+            <div class="input">
+                <input type="text" class="todo-input" >
+                <button class="add todos-btn">ADD</button>
+            </div>
+            <div class="buttons">
+                <button class="all-todos todos-btn">All Todos</button>
+                <button class="complete-todos todos-btn">All Completed Todos</button>
+                <button class="pending-todos todos-btn">All Pending Todos</button>
+                <button class="clear-todos todos-btn">Clear All</button>
+            </div>
+        </div>
+        <hr>
+        <div class="todos">
+            <div class="todo">
+                <div class="todo-list-input">
+                    <input type="checkbox" class="list-input">
+                    <p>123, <em>18.11.2024 , 05:55:05</em></p>
+                </div>
+                <div class="todo-list-btn">
+                    <button class="edit list-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete list-btn"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+"></script>
+    <script src="./todo.js"></script>
+    
+</body>
+</html>
