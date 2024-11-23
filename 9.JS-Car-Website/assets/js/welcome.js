@@ -13,24 +13,16 @@ form.addEventListener('submit',function(submit){
     const email = emailInput.value.trim()
     const pw = pwInput.value.trim()
 
+    const registeredUser = users.find((user)=>{
+        return user.email === email && user.pw === pw
+    })
 
-    if (email !== '' && pw !== '') {
-        
-        loginBtn.addEventListener('click' , function(){
-            const user = {
-                id : Date.now(),
-                email : email,
-                pw : pw,
-                isLogged : false,
-            }
-    
-            users.push(user)
-            setDataLocalStorage('users' , users)
-        })
+    if (registeredUser) {
+        users.isLogged = true;
+        setDataLocalStorage('users',users)
+        window.location.replace('main.html')
     }else{
-        alert('xanalari bos saxlama')
-        return;
+        alert('Bele bir istifadeci tapilmadi!')
     }
-    
     form.reset()
 })

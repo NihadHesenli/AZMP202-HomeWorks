@@ -1,0 +1,13 @@
+
+.card img{
+    width: 30%;
+}
+.card{
+    padding: 1.5rem;
+}
+
+.delete{
+    margin-top: 10px;
+    padding: 5px;
+    
+}

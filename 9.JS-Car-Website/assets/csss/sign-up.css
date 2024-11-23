@@ -4,16 +4,21 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
 }
 
 .container{
-    max-width: 65%;
+    max-width: 100%;
     margin: 0px auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 body{
     background-color: rgb(226, 223, 223);
-    height: 100vh;
 }
 
 .welcome{
@@ -24,6 +29,7 @@ body{
     align-items: center;
     width: 30%;
     margin: 0 auto;
+    padding: 10px 40px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -39,15 +45,9 @@ body{
 .welcome-head h2{
     margin-top: 50px;
     font-size: 2rem;
+    margin-bottom: 60px;
 }
-.welcome-head h1{
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    font-size: 2.5rem;
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
+
 
 form{
     display: flex;
@@ -81,7 +81,6 @@ form button{
 
 .sign{
     margin-top: 100px;
-    margin-bottom: 10px;
 }
 
 .sign p{
@@ -91,8 +90,3 @@ form button{
 .sign a{
     color: black;
 }
-
-
-
-
-
