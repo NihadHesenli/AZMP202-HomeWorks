@@ -1,0 +1,36 @@
+#nav{
+    background-color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav h1{
+    font-size: 1.7rem;
+    color: #3563E9;
+}
+
+.user-basket i  {
+    color: #596780;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #C3D4E966;
+    border-radius: 50px;
+}
+
+.user-basket i sup{
+    font-size: 10px;
+}
+
+#main{
+    background-color: #F6F7F9;
+}
+
+
+
+

@@ -34,29 +34,29 @@ function drawcard(arr){
         `
         row.append(divCard)
 
-        const deletebtn = document.querySelectorAll('.delete')
-        deletebtn.forEach((btn)=>{
-            btn.addEventListener(('click'),function(){
-                const deleteBtnId = this.getAttribute('data-id')
-                deleteData("products",deleteBtnId,this)
-
-            })
-        })
-
-        function deleteData(endpoint,id,button){
-            fetch(`${BASE_URL}/${endpoint}/${id}`,{method:"DELETE"})
-            .then((res)=>{
-                if (res.ok) {
-                    button.parentElement.parentElement.remove()
-                }
-            })
-            .catch((err)=>{
-                console.log(err);
-                
-            })
-        }
-
+        
     });
+    const deletebtn = document.querySelectorAll('.delete')
+    deletebtn.forEach((btn)=>{
+        btn.addEventListener(('click'),function(){
+            const deleteBtnId = this.getAttribute('data-id')
+            deleteData("products",deleteBtnId,this)
+
+        })
+    })
+
+    function deleteData(endpoint,id,button){
+        fetch(`${BASE_URL}/${endpoint}/${id}`,{method:"DELETE"})
+        .then((res)=>{
+            if (res.ok) {
+                button.parentElement.parentElement.remove()
+            }
+        })
+        .catch((err)=>{
+            console.log(err);
+            
+        })
+    }
 }
 
 window.addEventListener('DOMContentLoaded',function(){
