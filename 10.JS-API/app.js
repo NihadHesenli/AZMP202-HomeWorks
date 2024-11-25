@@ -1,4 +1,4 @@
-const BASE_URL = "https://fakestoreapi.com"
+const BASE_URL = "http://localhost:3000"
 
 function getData(endpoint){
     fetch(`${BASE_URL}/${endpoint}`)
@@ -30,6 +30,8 @@ function drawcard(arr){
                 <p style="font-weight: bold;">$${element.price.toFixed(2)}</p>
                 <div class = "btn">
                 <button class="delete" data-id = "${element.id}">Delete</button>
+                <button class="edit" data-id = "${element.id}">Edit<button>
+                <button class="details" data-id = "${element.id}">Details</button>
             </div>
         `
         row.append(divCard)
@@ -40,7 +42,7 @@ function drawcard(arr){
     deletebtn.forEach((btn)=>{
         btn.addEventListener(('click'),function(){
             const deleteBtnId = this.getAttribute('data-id')
-            deleteData("products",deleteBtnId,this)
+            deleteData("product",deleteBtnId,this)
 
         })
     })
@@ -57,8 +59,28 @@ function drawcard(arr){
             
         })
     }
+
+    const detailsBtn = document.querySelectorAll('.details')
+    detailsBtn.forEach((btn)=>{
+        btn.addEventListener('click' , function(){
+            const id = this.getAttribute('data-id')
+            const url = `details.html?id=${id}`
+            window.location.href = url
+            
+        })
+    })
+
+    const editbtn = document.querySelectorAll('.edit')
+    editbtn.forEach((btn)=>{
+        btn.addEventListener('click' , function () {
+            const id = this.getAttribute('data-id')
+            const url = `edit.html?id=${id}`
+            window.location.href = url
+        })
+    })
+
 }
 
 window.addEventListener('DOMContentLoaded',function(){
-    getData('products')
+    getData('product')
 })
