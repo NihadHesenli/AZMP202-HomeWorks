@@ -1,0 +1,30 @@
+.card{
+    background-color: #121212;
+    padding: 15px 11px;
+    width: 555px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+}
+
+.action{
+    margin-right: 20px;
+}
+
+.info h2{
+    margin: 0 ;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+
+form span{
+    position: absolute;
+    right: 15px;
+    top: 47px;
+    font-size: 13px;
+}
