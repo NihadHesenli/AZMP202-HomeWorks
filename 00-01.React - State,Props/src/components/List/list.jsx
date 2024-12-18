@@ -5,7 +5,7 @@ const List = () => {
   return (
     <div className='card'>
       <div className='info'>
-        <h2>Fuck nigga ass</h2>
+        <h2>Guitar practise at 8 a.m</h2>
       </div>
       <div className='action'><FaMinus /></div>
     </div>
