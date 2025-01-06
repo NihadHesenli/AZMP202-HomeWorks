@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "KOЯN - Korn",
+      "image": "https://www.metalopolis.net/files/pictures/articlescovers/cover_korn_kor012.jpg",
+      "rating": "4.5",
+      "reviews": 29,
+      "description": "Korn is the debut studio album by the American nu metal band Korn. It was released on October 11, 1994, through Immortal and Epic Records.",
+      "price": 48.92
+    },
+    {
+      "id": "2",
+      "title": "Deftones - White Pony",
+      "image": "https://m.media-amazon.com/images/I/51BXwSNRwIL.jpg",
+      "rating": 4.3,
+      "reviews": 29,
+      "description": "White Pony is the third studio album by the American alternative metal band Deftones, released on June 20, 2000, through Maverick Records. It was produced by Terry Date.",
+      "price": 34.98
+    },
+    {
+      "id": "3",
+      "title": "Incubus - S.C.I.E.N.C.E",
+      "image": "https://i.scdn.co/image/ab67616d0000b27355e734bb400d8c827700541b",
+      "rating": 3.8,
+      "reviews": 29,
+      "description": "S.C.I.E.N.C.E., Incubus's second studio album, was released on September 9, 1997. After their album release, they started opening for bands such as Korn and 311.",
+      "price": 33.99
+    },
+    {
+      "id": "4",
+      "title": "Limp Bizkit - Significant Other",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/Limp_Bizkit_Significant_Other.jpg",
+      "rating": 4.7,
+      "reviews": 29,
+      "description": "Significant Other is the second studio album by American nu metal band Limp Bizkit. It was released on June 22, 1999, through Flip and Interscope Records.",
+      "price": 32.97
+    },
+    {
+      "id": "5",
+      "title": "Mudvayne - Lost And Found",
+      "image": "https://images.genius.com/fb5db79e8f5c7521c14f74b8db5261dc.1000x1000x1.png",
+      "rating": 4.9,
+      "reviews": 29,
+      "description": "Lost and Found is the third studio album by American heavy metal band Mudvayne. The album was released on April 12, 2005 .It has sold about 1,000,000 copies.",
+      "price": 53.99
+    },
+    {
+      "id": "6",
+      "title": "Çilekeş - Y.O.K",
+      "image": "https://cdn-images.dzcdn.net/images/cover/b300bca3ab2dc894138211ec63cb94c3/0x1900-000000-80-0-0.jpg",
+      "rating": "4.3",
+      "reviews": 29,
+      "description": "Y.O.K. is the first album of the Çilekeş group, released in 2005. The album contains the best examples of nu metal and alternative rock music.",
+      "price": "31.99"
+    },
+    {
+      "id": "d122",
+      "title": "Gojira - From Mars To Sirius",
+      "price": "44.56",
+      "thumbnail": "https://m.media-amazon.com/images/I/71PgZkUb-eL._UF1000,1000_QL80_.jpg",
+      "description": "From Mars to Sirius is the third studio album by French heavy metal band Gojira. It is a concept album addressing environmental issues and the rebirth of a dead planet through a space travel storyline, with the underlying theme of a transition from war to peace",
+      "rating": "4.4",
+      "image": "https://m.media-amazon.com/images/I/71PgZkUb-eL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "500a",
+      "title": "Machine Head - Supercharger",
+      "price": "28.78",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/11/Machine_Head_-_Supercharger.jpg",
+      "description": "Supercharger is the fourth studio album by American heavy metal band Machine Head. The release was ill-timed, and, as a result of little promotion, fell far short of the success of The Burning Red, which has sold about 134,000 copies.",
+      "rating": "3.9",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/11/Machine_Head_-_Supercharger.jpg"
+    },
+    {
+      "id": "443b",
+      "title": "(Hed)P.E - Broke",
+      "price": 45.24,
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Hedpebroke.jpg/220px-Hedpebroke.jpg",
+      "description": "Broke is the second studio album by American rock band Hed PE. Released on August 22, 2000, the album expanded the band's sound to incorporate classic rock and world music influences.",
+      "rating": 4.1
+    }
+  ]
+}

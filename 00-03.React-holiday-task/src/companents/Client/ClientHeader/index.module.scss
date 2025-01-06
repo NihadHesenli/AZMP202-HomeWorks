@@ -1,0 +1,48 @@
+header{
+    background-color: #fff;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        h2{
+            span{
+                color: red;
+            }
+            @media(max-width: 767px){
+                font-size: 17px;
+            }
+        }
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 17px;
+                font-size: 19px;
+                li{
+                    list-style: none;    
+                    text-decoration: none;
+                    a{
+                        text-decoration: none;
+                        position: relative;
+                        color: black;
+                        span{
+                            position: absolute;
+                            color: red;
+                            top: -11px;
+                            font-size: 17px;
+                            right: -11px;
+                        }
+                    }
+                }    
+            }
+            @media (max-width:767px){
+                ul{
+                    font-size: 13px;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
