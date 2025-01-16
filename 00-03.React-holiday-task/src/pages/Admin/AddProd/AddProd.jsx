@@ -14,10 +14,8 @@ const AddProd = () => {
       rating: "",
     },
     onSubmit: async (values) => {
-      console.log('Submitting values:', values);
       try {
-        const res = await addNewData(endpoints.products, values);
-        console.log('Response:', res);
+        const res = await addNewData(endpoints.products, values);   
         if (res) {
           alert("Product added successfully!");
           formik.resetForm();
@@ -26,7 +24,6 @@ const AddProd = () => {
         }
       } catch (error) {
         console.error('Error submitting form:', error);
-        alert("An error occurred while adding the product.");
       }
     },
     validationSchema: ProductSchema,

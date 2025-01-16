@@ -33,16 +33,16 @@ const deleteById = async(req,res)=>{
     const {id}= req.params;
     try {
         const deleted = await products.findByIdAndDelete(id)
-        res.json(201).json(deleted)
+        res.status(201).json(deleted)
     } catch (error) {
         res.status(500).send({message : error.message})
     }
 }
 
 const addNewData = async(req,res)=>{
-    const {title,description,price,imageUrl} = req.body;
+    const {title,description,price,image_Url} = req.body;
 
-    if (!title || !description || !price || !imageUrl) {
+    if (!title || !description || !price || !image_Url) {
         return res.status(404).json({message : 'xanalari bos qoyma'})
     }
     try {

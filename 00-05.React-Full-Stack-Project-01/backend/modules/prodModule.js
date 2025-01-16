@@ -6,7 +6,7 @@ const prdoSchema = new Schema({
     title: { type: String, require: true },
     description: { type: String, require: true },
     price: { type: Number, require: true },
-    imageUrl: { type: String, require: true }
+    image_Url: { type: String, require: true }
 },
     {versionKey : false , timestamps : true}
 )

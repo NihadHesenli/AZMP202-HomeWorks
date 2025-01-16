@@ -13,7 +13,7 @@ const columns = (deleteButton) => [
   },
   {
     title: 'Photo',
-    dataIndex: 'image',
+    dataIndex: 'image_Url',
     render: (img) => {
       return <img src={img} alt="" width={'100'} />
     }
